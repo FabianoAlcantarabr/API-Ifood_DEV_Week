@@ -30,5 +30,4 @@ lombok	                            1.18.24
 springfox-boot-starter	            3.0.0
 h2	                                2.1.214
 
-
-[DIAGRAMA ER.docx](https://github.com/FabianoAlcantarabr/API-Ifood_DEV_Week/files/9678374/DIAGRAMA.ER.docx)
+[DIAGRAMA ER.docx](https://github.com/FabianoAlcantarabr/API-Ifood_DEV_Week/files/9678420/DIAGRAMA.ER.docx)
