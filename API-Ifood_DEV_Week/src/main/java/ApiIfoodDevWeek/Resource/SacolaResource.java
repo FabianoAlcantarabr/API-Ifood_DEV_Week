@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+package ApiIfoodDevWeek.Resource;
+
+
+
+import io.swagger.annotations.Api;
+import lombok.RequiredArgsConstructor;
+import ApiIfoodDevWeek.Model.Item;
+import ApiIfoodDevWeek.Model.Sacola;
+import ApiIfoodDevWeek.Resource.Dto.ItemDto;
+import ApiIfoodDevWeek.Service.SacolaService;
+import org.springframework.web.bind.annotation.*;
+
+@Api(value = "/ifood-devweek/sacolas")
+@RestController
+@RequestMapping("/ifood-devweek/sacolas")
+@RequiredArgsConstructor
+public class SacolaResource {
+    private final SacolaService sacolaService;
+
+    @PostMapping
+    public Item incluirItemNaSacola(@RequestBody ItemDto itemDto) {
+        return sacolaService.incluirItemNaSacola(itemDto);
+    }
+
+    @GetMapping("/{id}")
+    public Sacola verSacola(@PathVariable("id") Long id) {
+        return sacolaService.verSacola(id);
+    }
+
+    @PatchMapping("/fecharSacola/{sacolaId}")
+    public Sacola fecharSacola(@PathVariable("sacolaId") Long sacolaId,
+                               @RequestParam("formaPagamento") int formaPagamento) {
+        return sacolaService.fecharSacola(sacolaId, formaPagamento);
+    }
+}
+=======
 package ApiIfoodDevWeek.Resource;
 
 
@@ -32,3 +69,4 @@ public class SacolaResource {
         return sacolaService.fecharSacola(sacolaId, formaPagamento);
     }
 }
+>>>>>>> origin/main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ApiIfoodDevWeek.Resource.Dto;
 
 import lombok.AllArgsConstructor;
@@ -17,3 +18,24 @@ public class ItemDto {
     private int quantidade;
     private Long sacolaId;
 }
+=======
+package ApiIfoodDevWeek.Resource.Dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Embeddable;
+
+@AllArgsConstructor
+@Builder
+@Data
+@Embeddable
+@NoArgsConstructor
+public class ItemDto {
+    private Long produtoId;
+    private int quantidade;
+    private Long sacolaId;
+}
+>>>>>>> origin/main
